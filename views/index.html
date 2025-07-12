@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevBurger - Cardápio</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>DevBurger</h1>
+    <p>O melhor da programação em forma de lanche!</p>
+  </header>
+
+  <main>
+    <section id="cardapio">
+      <h2>Nosso Cardápio</h2>
+      <ul>
+        <li> X-Teclado</li>
+        <li> X-Mouse</li>
+        <li> Smash RTX 4090</li>
+        <li> Combo PC Gamer Completo</li>
+      </ul>
+    </section>
+
+    <section id="sugestao">
+      <h2>Tem uma sugestão?</h2>
+      <form method="GET" action="/sugestao">
+        <label for="nome">Seu nome:</label><br />
+        <input type="text" id="nome" name="nome" required /><br /><br />
+
+        <label for="ingredientes">Ingredientes do novo lanche:</label><br />
+        <textarea id="ingredientes" name="ingredientes" required></textarea><br /><br />
+
+        <button type="submit">Enviar sugestão</button>
+      </form>
+      <p>
+        <a href="/contato">Falar com a DevBurger</a> |
+        <a href="/api/lanches" target="_blank">Ver API de Lanches</a>
+      </p>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 DevBurger - Criado com Node.js e Express</p>
+  </footer>
+</body>
+
+</html>
